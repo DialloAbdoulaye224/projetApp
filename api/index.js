@@ -25,8 +25,8 @@ mongoose
   .catch((err) => {
     console.log("Error connecting to MongoDb", err);
   });
-
-app.listen(port, () => {
+// c'est ici qu'il faut rajouter ton adresse ip à côté de la variable PORT
+app.listen(port, "192.168.1.27" , () => {
   console.log("Server running on port 8000");
 });
 
